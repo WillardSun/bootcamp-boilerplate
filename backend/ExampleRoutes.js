@@ -11,7 +11,7 @@ expressRouter.route("/").get(async (request, response) =>{
         response.json(data)
     }
     else {
-        throw new Error("Notes data not found.")
+        throw new Error("Pets data not found.")
     }
 })
 
@@ -22,7 +22,7 @@ expressRouter.route("/:id").get(async (request, response) =>{
         response.json(data)
     }
     else {
-        throw new Error("Note data not found.")
+        throw new Error("Pet data not found.")
     }
 })
 

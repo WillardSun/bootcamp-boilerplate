@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { ThemeProvider, CssBaseline } from '@mui/material'
 import theme from './ExampleTheme.ts'
-import ExampleDashboardLocal from './ExampleDashboardLocal.tsx'
+import ExampleDashboard from './ExampleDashboard.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')!).render(
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Routes>
-        <Route path="/" element={<ExampleDashboardLocal />} />
+        <Route path="/" element={<ExampleDashboard />} />
       </Routes>
     </ThemeProvider>
   </StrictMode>
